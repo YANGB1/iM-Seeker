@@ -1,6 +1,6 @@
 # iM-Seeker
 
-iM-Seeker is commandline software designed to predict i-Motif folding status and folding strength.
+iM-Seeker is commandline software designed to predict DNA i-Motif folding status and folding strength.
 
 # Principle
 
