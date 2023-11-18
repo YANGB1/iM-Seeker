@@ -25,7 +25,7 @@ The software is developed on Python 3.9. And six Python packages are needed:
   
 
 # Usage
-The python script 'iM-Seeker.py' can be downloaded directly. The stored directory can be added to the ‘PATH’ environmental variable or the scripts with full path can be run alternatively. The help page can be checked by following command:
+The python script 'iM-Seeker.py' and two models 'pickle_model_final_classification.pkl' and 'pickle_model_final_regression.pkl' can be downloaded directly. 'iM-Seeker.py', 'pickle_model_final_classification.pkl' and 'pickle_model_final_regression.pkl' need to be kept in the same folder. The downloaded directory can be added to the ‘PATH’ environmental variable or the scripts with full path can be run alternatively. The help page can be checked by following command:
 ``` 
 python3 iM-Seeker.py -h
 ``` 
@@ -55,9 +55,13 @@ CCCCGACCCCAACCCCTCCCCCAACCCCTCCCC
 
 The output files are stored in the pre-set output folder.
 
-If --representative_conformation is set as 1, 'Putative_iM_Searcher_result_average_conformation.txt' includes conformation A of pre-set iM structures. 
+If --representative_conformation is set as 1, 'iM-seeker_result_average_conformation.txt' includes conformation A of pre-set iM structures. 
 
-If --representative_conformation is set as 2, 'Putative_iM_Searcher_result_side_shorter_conformation.txt' includes conformation B of pre-set iM structures. 
+If --representative_conformation is set as 2, 'iM-seeker_result_side_shorter_conformation.txt' includes conformation B of pre-set iM structures. 
+
+The prediction result is kept in 'iM-seeker_final_prediction.txt'.
+
+"0" of folding status means unfolded while "1" means folded. Folding strength is a continuous number. 
 
 
 
