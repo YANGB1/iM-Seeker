@@ -25,7 +25,10 @@ The software is developed on Python 3.9. And six Python packages are needed:
   
 
 # Usage
-The python script 'iM-Seeker.py' and two models 'pickle_model_final_classification.pkl' and 'pickle_model_final_regression.pkl' can be downloaded directly. 'iM-Seeker.py', 'pickle_model_final_classification.pkl' and 'pickle_model_final_regression.pkl' need to be put in the same folder. The downloaded directory can be added to the ‘PATH’ environmental variable or the scripts with full path can be run alternatively. The help page can be checked by following command:
+The python script 'iM-Seeker.py' and two models 'pickle_model_final_classification.pkl' and 'pickle_model_final_regression.pkl' can be downloaded directly. 'iM-Seeker.py', 'pickle_model_final_classification.pkl' and 'pickle_model_final_regression.pkl' need to be put in the same folder. The downloaded directory can be added to the ‘PATH’ environmental variable or the scripts with full path can be run alternatively. 
+
+But, please pay attention!!!!!! Model 'pickle_model_final_classification.pkl'(about 188Mb) has been uploaded by git lfs (Large file storage) because of the github limitation. Please use git lfs to download the file. You can't pull down the completed file via https link directly. Alternatively, all the files can be found at , which can be downloaded directly.
+The help page can be checked by following command:
 ``` 
 python3 iM-Seeker.py -h
 ``` 
