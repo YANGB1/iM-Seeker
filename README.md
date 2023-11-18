@@ -4,10 +4,11 @@ iM-Seeker is commandline software designed to predict i-Motif folding status and
 
 # Principle
 
-![Uploading iM-seeker F1.png…]()
+![iM-seeker F1](https://github.com/YANGB1/iM-Seeker/assets/92316121/375b7be5-8320-4bc7-a9f4-5c7572936c39)
+
 
 # Requirement
-The software is developed on Python 3.9. And four Python packages are needed:
+The software is developed on Python 3.9. And six Python packages are needed:
   
   os
   
@@ -17,14 +18,20 @@ The software is developed on Python 3.9. And four Python packages are needed:
   
   numpy (developed on v1.22.4)
 
+  imbalanced-learn (developed on v0.11.0)
+
+  xgboost (developed on v1.7.6)
+
+  
+
 # Usage
-The python script 'Putative-iM-Searcher.py' can be downloaded directly. The stored directory can be added to the ‘PATH’ environmental variable or the scripts with full path can be run alternatively. The help page can be checked by following command:
+The python script 'iM-Seeker.py' can be downloaded directly. The stored directory can be added to the ‘PATH’ environmental variable or the scripts with full path can be run alternatively. The help page can be checked by following command:
 ``` 
-python3 Putative-iM-Searcher.py -h
+python3 iM-Seeker.py -h
 ``` 
 Parameters can be configured according to the user's own needs.Here is an example:
 ``` 
-python3 Putative-iM-Searcher.py --nuc_type DNA --sequence input.fa --overlapped 2 --greedy 2 --stem_short 3 --stem_long 5 --loop1_short 1 --loop1_long 12 --loop2_short 1 --loop2_long 12 --loop3_short 1 --loop3_long 12 --representative_conformation 3 --output_conformation 1 --output_folder output_path
+python3 iM-Seeker.py --sequence input.fa --overlapped 2 --greedy 2 --stem_short 3 --stem_long 5 --loop1_short 1 --loop1_long 12 --loop2_short 1 --loop2_long 12 --loop3_short 1 --loop3_long 12 --representative_conformation 2 --output_folder output_path
 ``` 
 
 # Input and output
@@ -52,6 +59,5 @@ If --representative_conformation is set as 1, 'Putative_iM_Searcher_result_avera
 
 If --representative_conformation is set as 2, 'Putative_iM_Searcher_result_side_shorter_conformation.txt' includes conformation B of pre-set iM structures. 
 
-If --representative_conformation is set as 3, 'Putative_iM_Searcher_result_average_conformation.txt' and 'Putative_iM_Searcher_result_side_shorter_conformation.txt' include conformation A and B of pre-set iM structures, respectively. 
 
-If --output_conformation is set as 1, 'Putative_iM_Searcher_result_all_conformation.txt' includes all putative iMs.
+
