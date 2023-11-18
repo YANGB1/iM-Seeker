@@ -6,7 +6,6 @@ iM-Seeker is commandline software designed to predict i-Motif folding status and
 
 ![Uploading iM-seeker F1.png…]()
 
-
 # Requirement
 The software is developed on Python 3.9. And four Python packages are needed:
   
