@@ -4,7 +4,8 @@ iM-Seeker is commandline software designed to predict DNA i-Motif folding status
 
 # Principle
 
-![iM-seeker F1](https://github.com/YANGB1/iM-Seeker/assets/92316121/375b7be5-8320-4bc7-a9f4-5c7572936c39)
+![iM-seeker F1](https://github.com/YANGB1/iM-Seeker/assets/92316121/2702225d-23c9-452d-923c-d280cfe2fc35)
+
 
 
 # Requirement
