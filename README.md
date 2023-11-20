@@ -9,9 +9,11 @@ iM-Seeker is commandline software designed to predict DNA i-Motif folding status
 
 
 # Requirement
-The software is developed on Python 3.9. And six Python packages are needed:
+The software is developed on Python 3.9.7. And six Python packages are needed:
   
   os
+
+  pickle
   
   argparse (developed on v1.1)
   
