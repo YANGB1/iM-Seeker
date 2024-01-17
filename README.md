@@ -13,7 +13,7 @@ The dependency packages can be installed by:
 ``` 
 pip3 install -r requirements.txt
 ``` 
-iM-Seeker (available at https://pypi.org/project/Putative-iM-Searcher/) can be installed by:
+iM-Seeker (available at https://pypi.org/project/iM-Seeker/) can be installed by:
 ``` 
 pip3 install iM-Seeker
 ```
