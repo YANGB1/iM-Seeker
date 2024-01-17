@@ -8,22 +8,19 @@ iM-Seeker is commandline software designed to predict DNA i-Motif folding status
 
 
 
-# Requirement
-The software is developed on Python 3.9.7. And six Python packages are needed:
-  
-  os
-
-  pickle
-  
-  argparse (developed on v1.1)
-  
-  regex (developed on v2.5.109)
-  
-  numpy (developed on v1.22.4)
-
-  imbalanced-learn (developed on v0.11.0)
-
-  xgboost (developed on v1.7.6)
+# Installation
+The dependency packages can be installed by:
+``` 
+pip3 install -r requirements.txt
+``` 
+iM-Seeker (available at https://pypi.org/project/Putative-iM-Searcher/) can be installed by:
+``` 
+pip3 install iM-Seeker
+```
+Alternatively, the python script 'iM-Seeker.py' can be downloaded directly from Github. The stored directory can be added to the ‘PATH’ environmental variable or the scripts with full path can be run alternatively using command like: 
+``` 
+python3 iM-Seeker.py -h. 
+``` 
 
   
 
