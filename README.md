@@ -66,4 +66,12 @@ The prediction result is kept in 'iM-seeker_final_prediction.txt'.
 "0" of folding status means unfolded while "1" means folded. Folding strength is a continuous number. 
 
 
+# Test
+We provide the 'test.fa' in zipped folder 'test'. 'test.fa' contain Chr4 and Chr5 of Arabidopsis thaliana. Besides, there are nine example output files. 
+
+After intalled the package with 'pip', the same output files as 'Overlapped_Greedy_conformationA.txt', 'Overlapped_Greedy_conformationB.txt', and 'All_conformation.txt' can be generated with the following command, 
+``` 
+iM-Seeker.py --sequence test.fa
+``` 
+
 
