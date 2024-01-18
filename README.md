@@ -8,7 +8,7 @@ iM-Seeker is commandline software designed to predict DNA i-Motif folding status
 
 
 
-# Installation
+# Installation and Usage
 The dependency packages can be installed by:
 ``` 
 pip3 install -r requirements.txt
@@ -21,19 +21,15 @@ Alternatively, the python script 'iM-Seeker.py' can be downloaded directly from 
 ``` 
 python3 iM-Seeker.py -h
 ``` 
-The python script 'iM-Seeker.py' and two models 'pickle_model_classification.pkl' and 'pickle_model_regression.pkl' can be downloaded directly. 'iM-Seeker.py', 'pickle_model_classification.pkl' and 'pickle_model_regression.pkl' need to be put in the same folder. The downloaded directory can be added to the ‘PATH’ environmental variable or the scripts with full path can be run alternatively. 
-**But, please pay attention !!!!!! Model 'pickle_model_classification.pkl'(about 210Mb) need to be uploaded by git lfs (Large file storage) because of the github limitation. Please find all the files at https://figshare.com/s/e4e72e2e8ceaa0a4fbd6, which can be downloaded directly.**
+**Please pay attention !!!!!! The program needs two models 'pickle_model_classification.pkl' and 'pickle_model_regression.pkl' which are required as the input files of the software. Please find all the files at https://figshare.com/s/e4e72e2e8ceaa0a4fbd6, where all these files can be downloaded directly.**
   
-
-# Usage
-
-The help page can be checked by following command:
+After intalled the package with 'pip',the help page can be checked by following command:
 ``` 
-python3 iM-Seeker.py -h
+iM-Seeker.py -h
 ``` 
-Parameters can be configured according to the user's own needs.Here is an example:
+Parameters can be configured according to the user's own needs. Here is an example:
 ``` 
-python3 iM-Seeker.py --sequence input.fa --overlapped 2 --greedy 2 --stem_short 3 --stem_long 5 --loop1_short 1 --loop1_long 12 --loop2_short 1 --loop2_long 12 --loop3_short 1 --loop3_long 12 --representative_conformation 2 --output_folder output_path
+iM-Seeker.py --sequence input.fa --classification_model pickle_model_classification.pkl --regression_model pickle_model_regression.pkl --overlapped 2 --greedy 2 --stem_short 3 --stem_long 5 --loop1_short 1 --loop1_long 12 --loop2_short 1 --loop2_long 12 --loop3_short 1 --loop3_long 12 --representative_conformation 2 --output_folder output_path
 ``` 
 
 # Input and output
@@ -71,7 +67,7 @@ We provide the 'test.fa' in zipped folder 'test'. 'test.fa' contain Chr4 and Chr
 
 After intalled the package with 'pip', the same output files as 'Overlapped_Greedy_conformationA.txt', 'Overlapped_Greedy_conformationB.txt', and 'All_conformation.txt' can be generated with the following command, 
 ``` 
-iM-Seeker.py --sequence test.fa
+iM-Seeker.py --sequence test.fa --classification_model pickle_model_classification.pkl --regression_model pickle_model_regression.pkl
 ``` 
 
 
