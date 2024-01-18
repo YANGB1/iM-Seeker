@@ -19,7 +19,7 @@ pip3 install iM-Seeker
 ```
 Alternatively, the python script 'iM-Seeker.py' can be downloaded directly from Github. The stored directory can be added to the ‘PATH’ environmental variable or the scripts with full path can be run alternatively using command like: 
 ``` 
-python3 iM-Seeker.py -h. 
+python3 iM-Seeker.py -h
 ``` 
 The python script 'iM-Seeker.py' and two models 'pickle_model_classification.pkl' and 'pickle_model_regression.pkl' can be downloaded directly. 'iM-Seeker.py', 'pickle_model_classification.pkl' and 'pickle_model_regression.pkl' need to be put in the same folder. The downloaded directory can be added to the ‘PATH’ environmental variable or the scripts with full path can be run alternatively. 
 **But, please pay attention !!!!!! Model 'pickle_model_classification.pkl'(about 210Mb) need to be uploaded by git lfs (Large file storage) because of the github limitation. Please find all the files at https://figshare.com/s/e4e72e2e8ceaa0a4fbd6, which can be downloaded directly.**
