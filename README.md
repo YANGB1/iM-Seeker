@@ -63,11 +63,11 @@ The prediction result is kept in 'iM-seeker_final_prediction.txt'.
 
 
 # Test
-We provide the 'test.fa' in zipped folder 'test'. 'test.fa' contain Chr4 and Chr5 of Arabidopsis thaliana. Besides, there are nine example output files. 
+We provide the 'test.fa' in zipped folder 'test'. 'test.fa' contain Chr4 and Chr5 of Arabidopsis thaliana. Besides, there are two example output files. 
 
-After intalled the package with 'pip', the same output files as 'Overlapped_Greedy_conformationA.txt', 'Overlapped_Greedy_conformationB.txt', and 'All_conformation.txt' can be generated with the following command, 
+After intalled the package with 'pip', the same output files as 'iM-seeker_final_prediction_test.txt', and 'iM-seeker_result_average_conformation_test.txt' can be generated with the following command:
 ``` 
 iM-Seeker.py --sequence test.fa --classification_model pickle_model_classification.pkl --regression_model pickle_model_regression.pkl
 ``` 
-
+'pickle_model_classification.pkl' and 'pickle_model_regression.pkl' should be replaced by users' own path.
 
